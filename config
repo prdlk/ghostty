@@ -7,7 +7,7 @@ background-blur = true
 window-decoration = false
 window-padding-x = 0
 window-padding-y = 0
-background-opacity = 0.9
+background-opacity = 0.98
 
 # Cursor Configuration
 cursor-style = underline
@@ -89,6 +89,8 @@ keybind = ctrl+shift+n=text:\x02C
 keybind = ctrl+shift+s=text:\x02s
 keybind = ctrl+shift+q=text:\x02d
 
+keybind = super+shift+enter=new_window
+
 # Tab configuration
 gtk-titlebar = false
 
@@ -106,3 +108,7 @@ shell-integration-features = cursor,sudo,title,no-cursor
 
 # Rando stuff
 gtk-single-instance = true
+
+# Colors: Noctalia's ghostty template writes themes/noctalia from the active
+# shell palette (Monochrome) and reloads Ghostty on every theme change.
+theme = noctalia
