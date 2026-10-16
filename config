@@ -7,6 +7,13 @@ background-blur = true
 window-decoration = false
 window-padding-x = 0
 window-padding-y = 0
+# Ghostty parks the cell remainder (window height mod cell height) under the
+# last row, so the tmux status bar floats above the bottom edge. VictorMono
+# 11pt gives 21px cells; one px less makes 20px cells, which divide the
+# 1420px umbriel window on the ultrawide (71 rows) and leave no strip. Other
+# window heights bring the strip back; extend-always is no alternative, it
+# paints default-bg columns opaque against the translucent body.
+adjust-cell-height = -1
 background-opacity = 0.98
 
 # Cursor Configuration
