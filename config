@@ -5,14 +5,8 @@ background-blur = true
 
 # Window Configuration
 window-decoration = false
-# Zero padding, and paint the leftover strip (window height mod cell height,
-# kept at the bottom/right by window-padding-balance=false) with the nearest
-# row's background, so the tmux status bar sits flush with the window edge
-# at any font size. Plain `extend` skips any row holding a default-bg cell or
-# a powerline glyph, which the status bar always does, hence `-always`.
 window-padding-x = 0
 window-padding-y = 0
-window-padding-color = extend-always
 background-opacity = 0.98
 
 # Cursor Configuration
