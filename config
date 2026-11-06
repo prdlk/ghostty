@@ -7,7 +7,7 @@ background-blur = true
 window-decoration = false
 window-padding-x = 0
 window-padding-y = 0
-background-opacity = 0.98
+background-opacity = 0.9
 
 # Cursor Configuration
 cursor-style = underline
