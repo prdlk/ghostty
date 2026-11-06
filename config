@@ -114,6 +114,6 @@ shell-integration-features = cursor,sudo,title,no-cursor
 # Rando stuff
 gtk-single-instance = true
 
-# Colors: Noctalia's ghostty template writes themes/noctalia from the active
-# shell palette (Monochrome) and reloads Ghostty on every theme change.
-theme = noctalia
+# Colors: cyberdream (themes/cyberdream), the palette shared with tmux, nvim,
+# yazi, and television.
+theme = cyberdream
