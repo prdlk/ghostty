@@ -7,7 +7,7 @@ background-blur = true
 window-decoration = false
 window-padding-x = 0
 window-padding-y = 0
-background-opacity = 0.9
+background-opacity = 1.0
 
 # Cursor Configuration
 cursor-style = underline
@@ -53,12 +53,13 @@ keybind = ctrl+backspace=text:\x00
 # project tasks palette (pj): tmux prefix t
 keybind = ctrl+shift+p=text:\x02t
 keybind = ctrl+shift+space=text:\x02t
+# workmux palette (agents, worktrees, new from a prompt): tmux prefix w
+keybind = ctrl+shift+a=text:\x02w
 
-# launchers (kitty's ctrl+shift chords), tmux prefix y/e/g/a
+# launchers (kitty's ctrl+shift chords), tmux prefix y/e/g
 keybind = ctrl+shift+f=text:\x02y
 keybind = ctrl+shift+e=text:\x02e
 keybind = ctrl+shift+g=text:\x02g
-keybind = ctrl+shift+a=text:\x02a
 
 # tabs → tmux windows
 keybind = ctrl+shift+t=text:\x02c
