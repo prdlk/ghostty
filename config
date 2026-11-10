@@ -47,9 +47,9 @@ keybind = shift+enter=text:\x1b[13;2u
 
 # command palette: ctrl+space is tmux's root-table C-Space (tmux-palette);
 # sent explicitly as NUL so no keyboard-protocol mode can turn it into a CSI.
-# ctrl+backspace is a second key for the same palette.
 keybind = ctrl+space=text:\x00
-keybind = ctrl+backspace=text:\x00
+# session exposé (tmux-expose, live thumbnails of every session): tmux prefix E
+keybind = ctrl+backspace=text:\x02E
 # project tasks palette (pj): tmux prefix t
 keybind = ctrl+shift+p=text:\x02t
 keybind = ctrl+shift+space=text:\x02t
