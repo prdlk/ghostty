@@ -92,7 +92,8 @@ keybind = ctrl+shift+alt+,=text:\x02q
 
 # sessions: quitting Ghostty detaches; the session lives on in tmux
 keybind = ctrl+shift+n=text:\x02C
-keybind = ctrl+shift+s=text:\x02s
+# workmux agents sidebar toggle: tmux prefix S
+keybind = ctrl+shift+s=text:\x02S
 keybind = ctrl+shift+q=text:\x02d
 
 keybind = super+shift+enter=new_window
