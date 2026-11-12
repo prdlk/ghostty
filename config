@@ -1,6 +1,5 @@
 # Font Configuration
 font-size = 11
-font-family = VictorMono Nerd Font
 background-blur = true
 
 # Window Configuration
@@ -53,12 +52,14 @@ keybind = ctrl+backspace=text:\x02E
 # project tasks palette (pj): tmux prefix t
 keybind = ctrl+shift+p=text:\x02t
 keybind = ctrl+shift+space=text:\x02t
-# workmux palette (agents, worktrees, new from a prompt): tmux prefix w
-keybind = ctrl+shift+a=text:\x02w
+# workmux agents sidebar toggle: tmux prefix S (the workmux palette is on
+# tmux prefix w, and ctrl+s inside the sidebar)
+keybind = ctrl+shift+a=text:\x02S
 
-# launchers (kitty's ctrl+shift chords), tmux prefix y/e/g
+# launchers (kitty's ctrl+shift chords), tmux prefix y/g
 keybind = ctrl+shift+f=text:\x02y
-keybind = ctrl+shift+e=text:\x02e
+# file tree sidebar (treemux), toggled and focused: tmux prefix BSpace
+keybind = ctrl+shift+e=text:\x02\x7f
 keybind = ctrl+shift+g=text:\x02g
 
 # tabs → tmux windows
