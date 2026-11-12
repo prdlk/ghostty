@@ -45,6 +45,26 @@ keybind = ctrl+shift+period=reload_config
 # (omp, claude) read. Never \n: that is ctrl+j, tmux's pane-down key.
 keybind = shift+enter=text:\x1b[13;2u
 
+# Super (the Corne's right thumb, Cmd on macOS): Hyprland (hypr/command.lua)
+# turns SUPER + key into ctrl+shift+key for Ghostty, so every ctrl+shift chord
+# in this file is also a super chord (super+t new tmux window, super+c copy,
+# super+1 window 1, ...). Hyprland forwards only the ctrl+shift chords bound
+# here (Ghostty passes an unbound one on as a CSI-u key for the program to
+# interpret): run `hyprctl reload` after adding one. Plain ctrl stays the terminal's (Ctrl+C
+# SIGINT, ctrl+b the tmux prefix).
+keybind = ctrl+shift+equal=increase_font_size:1
+keybind = ctrl+shift+minus=decrease_font_size:1
+keybind = ctrl+shift+digit_0=reset_font_size
+keybind = ctrl+shift+digit_1=text:\x021
+keybind = ctrl+shift+digit_2=text:\x022
+keybind = ctrl+shift+digit_3=text:\x023
+keybind = ctrl+shift+digit_4=text:\x024
+keybind = ctrl+shift+digit_5=text:\x025
+keybind = ctrl+shift+digit_6=text:\x026
+keybind = ctrl+shift+digit_7=text:\x027
+keybind = ctrl+shift+digit_8=text:\x028
+keybind = ctrl+shift+digit_9=text:\x029
+
 # command palette: ctrl+space is tmux's root-table C-Space (tmux-palette);
 # sent explicitly as NUL so no keyboard-protocol mode can turn it into a CSI.
 keybind = ctrl+space=text:\x00
@@ -72,16 +92,15 @@ keybind = ctrl+page_up=text:\x02p
 keybind = ctrl+shift+arrow_right=text:\x02n
 keybind = ctrl+shift+arrow_left=text:\x02p
 keybind = ctrl+shift+k=text:\x02n
+keybind = ctrl+shift+l=text:\x02n
 keybind = ctrl+shift+h=text:\x02p
 
-# splits → tmux panes
-keybind = ctrl+shift+l=text:\x02v
+# splits → tmux panes (split right: tmux alt+shift+enter or prefix v)
 keybind = ctrl+shift+j=text:\x02h
 keybind = ctrl+shift+x=text:\x02x
 
 # session picker: tmux-palette's sessions palette (tmux-sessions) on prefix o
 keybind = ctrl+shift+o=text:\x02o
-keybind = super+enter=text:\x02o
 keybind = ctrl+shift+enter=text:\x02z
 keybind = ctrl+shift+z=text:\x02z
 
